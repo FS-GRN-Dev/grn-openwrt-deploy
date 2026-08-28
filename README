@@ -1,0 +1,11 @@
+详细内容请阅读 《openwrt部署GRN client》文档
+
+注意事项（很重要）：
+部署完成后，需要执行如下操作：
+
+1> 把部署撤收脚本拷贝到/root 目录下（后续可以使用此脚本进行撤收）：
+    # cp /root/openwrt_deploy/openwrt_grn_deploy.sh /root
+
+2> 删除 openwrt_deploy 目录（a> 防止ca.key泄露; b> 该工程占磁盘406M空间，太大）：
+    # rm -rf /root/openwrt_deploy
+    # rm -rf /root/openwrt_deploy.zip
